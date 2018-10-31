@@ -1,4 +1,4 @@
-# DevelopingDataProducts_3
+# DevelopingDataProducts
 Week 3 : R Markdown Presentation &amp; Plotly
 
 title: "Stock Exchange São Paulo | 2018 Jan" </BR>
