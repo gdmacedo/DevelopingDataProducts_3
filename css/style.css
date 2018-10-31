@@ -1,0 +1,22 @@
+@import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #ad1d28;
+  margin-top: 75px;
+}
+
+body {
+  background-image: url("Logo.png"), url("LogoCurso.jpg");
+  background-size: auto 85px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 10px 05px, 100% 100%; 
+  background-color: #000000;
+}
+
+mainPanel{
+  background-color: #FFFFFF;
+}
+
