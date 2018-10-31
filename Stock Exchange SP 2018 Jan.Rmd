@@ -1,0 +1,106 @@
+---
+title: "Stock Exchange                     São Paulo | 2018 Jan"
+author: "Macedo, Glener Diniz                                                                                                                                                                                                  Counselors:                                                                                                                                      - Brian Caffo ; PhD;                                                                                                                         - Jeff Leek, PhD                                                                                                                         - Roger D. Peng, PhD."
+date: "27 de outubro de 2018"
+output:
+  ioslides_presentation:
+    css: ./css/style.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.dpi = 96, collapse = TRUE, comment = "#>")
+```
+## About
+I present in these web pages using the R language, along with the Markdown package a chart created with Plotly.
+```{r echo=FALSE, about}
+# Access the data contained in a .csv text file.
+```
+<b>Markdown</b> - Rendering for R</br>
+Markdown is a simple text formatting syntax that can be converted to XHTML or other formats.
+
+## Taking the data from the .csv file
+Gets the data generated from a file saved in excell.
+```{r echo=TRUE, geodata}
+# Access the data contained in a .csv text file.
+getData <- read.csv(file = "StockExchangeSP2018012.csv",
+                    header = TRUE, 
+                    sep = ";"
+                    )
+```
+
+## Working the data
+Picking and selecting fields
+```{r my_Data}
+#Select the data for the days of January 2018.
+my_Data <- data.frame(dData = substr(getData$Data,1,2),
+                      Variac = getData$Variacao,
+                      Abertr = getData$Abertura
+                     )
+```
+## Libraries
+Loading the libraries that will be used.
+```{r GetBiblioteca, echo=TRUE, fig.align='center', fig.cap='Bovespa Operations', cache=FALSE, results=FALSE, warning=FALSE, message=FALSE}
+library(ggplot2)
+library(plotly)
+```
+<b>ggplot2</b></br>
+A system for 'declaratively' creating graphics, based on <I>"The Grammar of Graphics"</I>. We provide the data, the parameters, and we ask, executes the "ggplot2" and tells this how to map the variables, for aesthetics, which primitive graphics to use, and takes care of the details.
+
+<b>Plotly</b></br>
+Plotly's R library is free, open source and does not require an online account at the plot.ly site, as it can be installed so it works offline.
+
+
+## The Process
+
+```{r TheProcess, echo=TRUE, fig.align='center', fig.cap='De de 2018', cache=FALSE, results=FALSE, warning=FALSE, message=FALSE}
+g <- ggplot(data  = my_Data, 
+            aes(x = dData,
+                y = (Variac)
+               ),
+            color=am, 
+            Title="Stock Exchange"
+            ) +
+            labs(x="January day", 
+                 y="Values ($)"
+                )
+```
+<b>The process</b> here consists of assigning the days of January 2018 to the x-axis (of the abysses). And for the y-axis (of the ordinates) the values of the opening and closing variation performed on the <b>BOVESPA</b> - Bolsa de Valores de Sao Paulo.
+
+## The graphic I
+```{r echo=FALSE}
+gI <- ggplot(my_Data, 
+             aes(dData, 
+                 Variac
+                ),
+             Title="Stock Exchange"
+            ) +
+            geom_point(aes(colour = Abertr)) +
+            geom_smooth(aes(group = 1 )) +
+            geom_hline(yintercept = 25) +
+            labs(x="January day", 
+                 y="Values ($)"
+               )
+ggplotly(gI)
+```
+
+## The graphic II
+```{r echo=FALSE}
+gII <- g + geom_bar(stat="identity")
+ggplotly(gII)
+```
+
+## References
+
+Bovespa Information: São Paulo Stock Exchange / Brazil</br>
+[advfn.com](https://br.advfn.com/bolsa-de-valores/bovespa/info)</br>
+
+- **Git Hub, Inc[US]**</BR>
+The files used here as a data source in .cvs can be accessed in the Git Hub, through the URL address:</BR>
+https://github.com/gdmacedo/DevelopingDataProducts_3
+
+
+## Summary
+
+- **BOVESPA**</BR>
+The Bovespa (São Paulo Stock Exchange) is the main stock trading market of publicly traded companies in Brazil. Founded in 1890, its headquarters is located in the center of the city of São Paulo.
+
