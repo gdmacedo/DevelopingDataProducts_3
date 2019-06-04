@@ -13,4 +13,4 @@ output: ioslides_presentation
 
 This presentation is a page of web, using the R Markdown that present an gráfico created with Plotly.
 
-This presentation is a web page, using the R language along with the Markdown package, which the purpose of presenting a chart created with Plotly, which is tasked with the activity of the third week of the course Developing Data Products, Course Program Data Science, from <b>Johns Hopkins University</b>, taught by Coursera.org.
+This presentation is a web page, using the R language along with the Markdown package, which the purpose of presenting a chart created with Plotly, which is tasked with the activity of the third week of the course Developing Data Products, Course Program Data Science, from <b>Johns Hopkins University</b>, taught by Coursera.org. 
