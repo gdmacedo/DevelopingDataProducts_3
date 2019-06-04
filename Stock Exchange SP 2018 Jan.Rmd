@@ -1,10 +1,11 @@
 ---
-title: "Stock Exchange                     São Paulo | 2018 Jan"
-author: "Macedo, Glener Diniz                                                                                                                                                                                                  Counselors:                                                                                                                                      - Brian Caffo ; PhD;                                                                                                                         - Jeff Leek, PhD                                                                                                                         - Roger D. Peng, PhD."
-date: "27 de outubro de 2018"
+title: "Stock ExchangeÂ Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  SÃ£o Paulo | 2019 June"
+author: "Macedo, Glener DinizÂ Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  Counselors:Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  -Â Brian Caffo ; PhD;Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  -Â Jeff Leek, PhDÂ Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â Â  -Â Roger D. Peng, PhD."
+date: "04 de june de 2019"
 output:
   ioslides_presentation:
     css: ./css/style.css
+  slidy_presentation: default
 ---
 
 ```{r setup, include=FALSE}
@@ -64,7 +65,7 @@ g <- ggplot(data  = my_Data,
                  y="Values ($)"
                 )
 ```
-<b>The process</b> here consists of assigning the days of January 2018 to the x-axis (of the abysses). And for the y-axis (of the ordinates) the values of the opening and closing variation performed on the <b>BOVESPA</b> - Bolsa de Valores de Sao Paulo.
+<b>The process</b> here consists of assigning the days of January 2018 to the x-axis (of the abysses). And for the y-axis (of the ordinates) the values of the opening and closing variation performed on the <b>BOVESPA</b> - Bolsa de Valores de SÃ£o Paulo.
 
 ## The graphic I
 ```{r echo=FALSE}
@@ -91,7 +92,7 @@ ggplotly(gII)
 
 ## References
 
-Bovespa Information: São Paulo Stock Exchange / Brazil</br>
+Bovespa Information: SÃ£o Paulo Stock Exchange / Brazil</br>
 [advfn.com](https://br.advfn.com/bolsa-de-valores/bovespa/info)</br>
 
 - **Git Hub, Inc[US]**</BR>
@@ -102,5 +103,4 @@ https://github.com/gdmacedo/DevelopingDataProducts_3
 ## Summary
 
 - **BOVESPA**</BR>
-The Bovespa (São Paulo Stock Exchange) is the main stock trading market of publicly traded companies in Brazil. Founded in 1890, its headquarters is located in the center of the city of São Paulo.
-
+The Bovespa (SÃ£o Paulo Stock Exchange) is the main stock trading market of publicly traded companies in Brazil. Founded in 1890, its headquarters is located in the center of the city of SÃ£o Paulo.
